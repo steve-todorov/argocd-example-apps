@@ -6,13 +6,13 @@ metadata:
     traefik.ingress.kubernetes.io/router.entrypoints: http
 spec:
   rules:
-    - host: example.cloud.cs
+    - host: example.carlspring.org
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: argocd-server
+                name: guestbook-ui
                 port:
                   number: 80
